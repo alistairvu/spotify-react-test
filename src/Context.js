@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-
+import Bearer from "./Key"
 const Context = React.createContext()
 
 const ContextProvider = ({ children }) => {
@@ -14,8 +14,7 @@ const ContextProvider = ({ children }) => {
           method: "GET",
           headers: {
             Accept: "application/json",
-            Authorization:
-              "Bearer BQDsLzzGjM8_Ulvcnu8AGjHa4ELnFr9EPG4qSCpb3mu5Q8SshtJ9Ri7I01FZg2fHH3b3DbEBQUv0oxpR83-vgEMkAogbeL9m7KiO0v9EDxtYY3BEjK3iYVDMn1kGM9B9csUTMMgrtMWXcj3_xznxzGnYGrCAtw",
+            Authorization: Bearer,
           },
         }
       )
